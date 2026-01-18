@@ -47,6 +47,7 @@ public abstract class LivingEntityMixin extends Entity {
     @Shadow public float forwardSpeed;
     @Shadow private int jumpingCooldown;
     @Shadow protected boolean jumping;
+    @Shadow public int timeUntilRegen;
 
     @Shadow protected abstract Vec3d applyClimbingSpeed(Vec3d velocity);
     @Shadow protected abstract float getJumpVelocity();
